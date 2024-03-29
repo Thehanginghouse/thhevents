@@ -26,35 +26,35 @@ const Home = () => {
                 <div className='green' style={{display: 'flex', gap: '20px', justifyContent: 'center', alignItems: 'center', marginBottom: '50px'}}>
                     <div className='holder' style={{display: 'flex', gap: '20px'}}>
                         {/* eslint-disable-next-line */}
-                        <a target="_blank" href="https://thehanginghouse.webhr.co/hr/home">
+                        <a rel="noreferrer" target="_blank" href="https://thehanginghouse.webhr.co/hr/home">
                             <div className="ButtonDiv2">
                                 <p>WebHR</p>
                             </div>
                         </a> 
                         
                         {/* eslint-disable-next-line */}
-                        <a onClick={handleDownloadZip}>
+                        <a rel="noreferrer" onClick={handleDownloadZip}>
                             <div className="ButtonDiv2">
                                 <p>Download Font</p>
                             </div>
                         </a>
 
                         {/* eslint-disable-next-line */}
-                        <a target="_blank" href="https://auth.monday.com/auth/login_monday/">
+                        <a rel="noreferrer" target="_blank" href="https://auth.monday.com/auth/login_monday/">
                             <div className="ButtonDiv2">
                                 <p>Monday</p>
                             </div>
                         </a>
 
                         {/* eslint-disable-next-line */}
-                        <a target="_blank" href="https://thh-internal.web.app/">
+                        <a rel="noreferrer" target="_blank" href="https://thh-internal.web.app/">
                             <div className="ButtonDiv2">
                                 <p>THH Internal</p>
                             </div>
                         </a>
 
                         {/* eslint-disable-next-line */}
-                        <a target="_blank" href="https://thehanginghouse.com/">
+                        <a rel="noreferrer" target="_blank" href="https://thehanginghouse.com/">
                             <div className="ButtonDiv2">
                                 <p>THH Website</p>
                             </div>
@@ -63,35 +63,35 @@ const Home = () => {
 
                     <div className='holder' style={{display: 'flex', gap: '20px', padding: '20px'}}>
                         {/* eslint-disable-next-line */}
-                        <a target="_blank" href="https://www.sonicwall.com/products/remote-access/vpn-clients/">
+                        <a rel="noreferrer" target="_blank" href="https://www.sonicwall.com/products/remote-access/vpn-clients/">
                             <div className="ButtonDiv2">
                                 <p>Sonic Wall</p>
                             </div>
                         </a>
 
                         {/* eslint-disable-next-line */}
-                        <a onClick={handleDownload}>
+                        <a rel="noreferrer" onClick={handleDownload}>
                             <div className="ButtonDiv2">
                                 <p>Company Profile</p>
                             </div>
                         </a>
 
                         {/* eslint-disable-next-line */}
-                        {/* <a target="_blank" href="https://analytics.google.com/analytics/web/?authuser=1#/report-home/a138673239w199446139p193870326">
+                        {/* <a rel="noreferrer" target="_blank" href="https://analytics.google.com/analytics/web/?authuser=1#/report-home/a138673239w199446139p193870326">
                             <div className="ButtonDiv2">
                                 <p>Google Analytics</p>
                             </div>
                         </a> */}
 
                         {/* eslint-disable-next-line */}
-                        <a target="_blank" href="https://my.bluehost.com/web-hosting/cplogin">
+                        <a rel="noreferrer" target="_blank" href="https://my.bluehost.com/web-hosting/cplogin">
                             <div className="ButtonDiv2">
                                 <p>Bluehost</p>
                             </div>
                         </a>    
 
                         {/* eslint-disable-next-line */}
-                        <a target="_blank" href="https://login.microsoftonline.com/">
+                        <a rel="noreferrer" target="_blank" href="https://login.microsoftonline.com/">
                             <div className="ButtonDiv2">
                                 <p>Microsoft</p>
                             </div>

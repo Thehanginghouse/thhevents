@@ -16,7 +16,7 @@ const Booking = () => {
                 <div className='green' style={{display: 'flex', gap: '20px', padding: '20px', justifyContent: 'center', alignItems: 'center', flexDirection: 'column'}}>
                     <div className='holder' style={{display: 'flex', gap: '20px', padding: '10px'}}>
                         {/* eslint-disable-next-line */}
-                        <a target="_blank" href="https://carbookingapp.vercel.app/">
+                        <a target="_blank" rel="noreferrer" href="https://carbookingapp.vercel.app/">
                             <div className="ButtonDiv2" style={{width: '280px'}}>
                                 <p>Nissan Car Booking App</p>
                             </div>
@@ -25,7 +25,7 @@ const Booking = () => {
 
                     <div className='holder' style={{display: 'flex', gap: '20px', padding: '10px'}}>
                         {/* eslint-disable-next-line */}
-                        <a target="_blank" href="https://kite-festival-app.vercel.app/">
+                        <a target="_blank" rel="noreferrer" href="https://kite-festival-app.vercel.app/">
                             <div className="ButtonDiv2" style={{width: '280px'}}>
                                 <p>Kite Festival Booking App</p>
                                 <p style={{fontSize: '12px', marginTop: '-17px', color: 'grey'}}>name: admin </p>
@@ -36,7 +36,7 @@ const Booking = () => {
 
                     <div className='holder' style={{display: 'flex', gap: '20px', padding: '10px'}}>
                         {/* eslint-disable-next-line */}
-                        <a target="_blank" href="https://www.nissanaftersalesconference.org/">
+                        <a target="_blank" rel="noreferrer" href="https://www.nissanaftersalesconference.org/">
                             <div className="ButtonDiv2" style={{width: '280px'}}>
                                 <p>Nissan RSVP App</p>
                             </div>
