@@ -13,7 +13,7 @@ h1,h2,h3,h4,h5,h6,a,button,div, tr, td, table, th, .sss{
 
 .ButtonDiv {
     cursor: grab;
-    background-color: #3A3A3A;
+    background-color: white;
     width: 200px;
     display: flex;
     justify-content: center;
@@ -21,7 +21,7 @@ h1,h2,h3,h4,h5,h6,a,button,div, tr, td, table, th, .sss{
     flex-direction: column;
     border-radius: 20px;
     border-bottom: #00f526;
-    color: white;
+    color: black;
     font-weight: 900;
 }
 
@@ -36,7 +36,7 @@ h1,h2,h3,h4,h5,h6,a,button,div, tr, td, table, th, .sss{
 .ButtonDiv2 {
     cursor: grab;
     font-size: 16px;
-    background-color: #3A3A3A;
+    background-color: white;
     /* border: solid 2px; */
     border-bottom: solid 2px #00f526;
     width: 140px;
@@ -46,7 +46,7 @@ h1,h2,h3,h4,h5,h6,a,button,div, tr, td, table, th, .sss{
     align-items: center;
     flex-direction: column;
     border-radius: 20px;
-    color: white;
+    color: black;
     font-weight: 900;
 }
 
