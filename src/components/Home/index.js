@@ -27,7 +27,7 @@ const Home = () => {
     return (
         <>
             <div style={{display:'flex', flexDirection: 'column', width: '100vw', justifyContent: 'center', alignItems: 'center'}}>
-                <img style={{width: '120px', marginTop: '80px'}} src={thhlogo} alt="THHLogo"/>
+                <img style={{width: '300px', marginTop: '80px'}} src={thhlogo} alt="THHLogo"/>
                 <h1 className="implinks" style={{color: 'white', marginBottom: '-40px', textAlign: 'center'}}>IMPORTANT LINKS</h1>
                 <p className="welcome" style={{color: '#00f526', textAlign: 'center', padding: '20px'}}>Welcome. Find the links to the frequently used websites.</p> 
 

@@ -1,16 +1,26 @@
 import React from 'react';
 import '../Z_stuff/All.css';
 import thhlogo from '../Z_stuff/thhlogo.png'
-
+import CompanyProfile from './StaffLinks-assets/ComapanyProfile.pdf'
+import fonts from './StaffLinks-assets/font.zip'
+import { saveAs } from 'file-saver';
 
 const Home = () => { 
+
+    const handleDownload = () => {
+        saveAs(CompanyProfile, 'CompanyProfile.pdf');
+      }
+
+      const handleDownloadZip = () => {
+        saveAs(fonts, 'font.zip');
+      }
 
 
     return (
         <>
             <div className='main' style={{display:'flex', flexDirection: 'column', width: '100%', height: '100%', justifyContent: 'center', alignItems: 'center'}}>
 
-            <img style={{width: '100px', marginTop: '80px'}} src={thhlogo} alt="THHLogo"/>
+            <img style={{width: '300px', marginTop: '80px'}} src={thhlogo} alt="THHLogo"/>
             <h1 style={{color: 'white', fontSize: '40px' }}>STAFF LINKS</h1>    
 
                 <div className='green' style={{display: 'flex', gap: '20px', justifyContent: 'center', alignItems: 'center', marginBottom: '50px'}}>
@@ -23,16 +33,16 @@ const Home = () => {
                         </a> 
                         
                         {/* eslint-disable-next-line */}
-                        <a target="_blank" href="https://app.clickup.com/">
+                        <a onClick={handleDownloadZip}>
                             <div className="ButtonDiv2">
-                                <p>ClickUp</p>
+                                <p>Download Font</p>
                             </div>
                         </a>
 
                         {/* eslint-disable-next-line */}
-                        <a target="_blank" href="https://app.hubspot.com/login/">
+                        <a target="_blank" href="https://auth.monday.com/auth/login_monday/">
                             <div className="ButtonDiv2">
-                                <p>Hubspot</p>
+                                <p>Monday</p>
                             </div>
                         </a>
 
@@ -53,26 +63,25 @@ const Home = () => {
 
                     <div className='holder' style={{display: 'flex', gap: '20px', padding: '20px'}}>
                         {/* eslint-disable-next-line */}
-                        <a target="_blank" href="https://www.qlink.to/thehanginghouse">
+                        <a target="_blank" href="https://www.sonicwall.com/products/remote-access/vpn-clients/">
                             <div className="ButtonDiv2">
-                                <p>Online Drive</p>
-                                <p style={{marginTop: '-15px'}}>(qlink)</p>
+                                <p>Sonic Wall</p>
                             </div>
                         </a>
 
                         {/* eslint-disable-next-line */}
-                        <a target="_blank" href="https://app.apollo.io/#/cockpit">
+                        <a onClick={handleDownload}>
                             <div className="ButtonDiv2">
-                                <p>Apollo</p>
+                                <p>Company Profile</p>
                             </div>
                         </a>
 
                         {/* eslint-disable-next-line */}
-                        <a target="_blank" href="https://analytics.google.com/analytics/web/?authuser=1#/report-home/a138673239w199446139p193870326">
+                        {/* <a target="_blank" href="https://analytics.google.com/analytics/web/?authuser=1#/report-home/a138673239w199446139p193870326">
                             <div className="ButtonDiv2">
                                 <p>Google Analytics</p>
                             </div>
-                        </a>
+                        </a> */}
 
                         {/* eslint-disable-next-line */}
                         <a target="_blank" href="https://my.bluehost.com/web-hosting/cplogin">
