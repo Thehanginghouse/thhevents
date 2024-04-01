@@ -83,12 +83,7 @@ const Home = () => {
                             </div>
                         </a> */}
 
-                        {/* eslint-disable-next-line */}
-                        <a rel="noreferrer" target="_blank" href="https://my.bluehost.com/web-hosting/cplogin">
-                            <div className="ButtonDiv2">
-                                <p>Bluehost</p>
-                            </div>
-                        </a>    
+           
 
                         {/* eslint-disable-next-line */}
                         <a rel="noreferrer" target="_blank" href="https://login.microsoftonline.com/">
@@ -97,6 +92,36 @@ const Home = () => {
                             </div>
                         </a>
                     </div>
+                </div>
+
+
+                <h1 style={{color: 'white', fontSize: '40px' }}>Downloads</h1>   
+
+                <div className='green' style={{display: 'flex', gap: '20px', justifyContent: 'center', alignItems: 'center', marginBottom: '50px'}}>
+                    <div className='holder' style={{display: 'flex', gap: '20px'}}>
+
+                        {/* eslint-disable-next-line */}
+                        <a rel="noreferrer" onClick={handleDownloadZip}>
+                            <div className="ButtonDiv2">
+                                <p>Download Font</p>
+                            </div>
+                        </a>
+
+                        <a rel="noreferrer" target="_blank" href="https://www.sonicwall.com/products/remote-access/vpn-clients/">
+                            <div className="ButtonDiv2">
+                                <p>Sonic Wall</p>
+                            </div>
+                        </a>
+
+                        {/* eslint-disable-next-line */}
+                        <a rel="noreferrer" onClick={handleDownload}>
+                            <div className="ButtonDiv2">
+                                <p>Company Profile</p>
+                            </div>
+                        </a>
+
+                    </div>
+
                 </div>
                 
                 
