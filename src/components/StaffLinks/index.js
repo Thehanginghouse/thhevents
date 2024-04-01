@@ -33,11 +33,11 @@ const Home = () => {
                         </a> 
                         
                         {/* eslint-disable-next-line */}
-                        <a rel="noreferrer" onClick={handleDownloadZip}>
+                        {/* <a rel="noreferrer" onClick={handleDownloadZip}>
                             <div className="ButtonDiv2">
                                 <p>Download Font</p>
                             </div>
-                        </a>
+                        </a> */}
 
                         {/* eslint-disable-next-line */}
                         <a rel="noreferrer" target="_blank" href="https://auth.monday.com/auth/login_monday/">
@@ -54,27 +54,29 @@ const Home = () => {
                         </a>
 
                         {/* eslint-disable-next-line */}
+        
+                    </div>
+
+                    <div className='holder' style={{display: 'flex', gap: '20px', padding: '20px'}}>
                         <a rel="noreferrer" target="_blank" href="https://thehanginghouse.com/">
                             <div className="ButtonDiv2">
                                 <p>THH Website</p>
                             </div>
                         </a>
-                    </div>
-
-                    <div className='holder' style={{display: 'flex', gap: '20px', padding: '20px'}}>
+                        
                         {/* eslint-disable-next-line */}
-                        <a rel="noreferrer" target="_blank" href="https://www.sonicwall.com/products/remote-access/vpn-clients/">
+                        {/* <a rel="noreferrer" target="_blank" href="https://www.sonicwall.com/products/remote-access/vpn-clients/">
                             <div className="ButtonDiv2">
                                 <p>Sonic Wall</p>
                             </div>
-                        </a>
+                        </a> */}
 
                         {/* eslint-disable-next-line */}
-                        <a rel="noreferrer" onClick={handleDownload}>
+                        {/* <a rel="noreferrer" onClick={handleDownload}>
                             <div className="ButtonDiv2">
                                 <p>Company Profile</p>
                             </div>
-                        </a>
+                        </a> */}
 
                         {/* eslint-disable-next-line */}
                         {/* <a rel="noreferrer" target="_blank" href="https://analytics.google.com/analytics/web/?authuser=1#/report-home/a138673239w199446139p193870326">
