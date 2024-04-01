@@ -20,7 +20,7 @@ const Home = () => {
         <>
             <div className='main' style={{display:'flex', flexDirection: 'column', width: '100%', height: '100%', justifyContent: 'center', alignItems: 'center'}}>
 
-            <img style={{width: '300px', marginTop: '80px'}} src={thhlogo} alt="THHLogo"/>
+            <img style={{width: '150px', marginTop: '80px'}} src={thhlogo} alt="THHLogo"/>
             <h1 style={{color: 'white', fontSize: '40px' }}>STAFF LINKS</h1>    
 
                 <div className='green' style={{display: 'flex', gap: '20px', justifyContent: 'center', alignItems: 'center', marginBottom: '50px'}}>

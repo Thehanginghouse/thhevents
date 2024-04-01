@@ -8,7 +8,7 @@ const AdminLinks = () => {
     return (
         <>
             <div className='main' style={{display:'flex', flexDirection: 'column', width: '100vw', height: '100vh', justifyContent: 'center', alignItems: 'center'}}>
-            <img style={{width: '300px'}} src={thhlogo} alt="THHLogo"/>
+            <img style={{width: '150px'}} src={thhlogo} alt="THHLogo"/>
             <h1 style={{color: 'white', fontSize: '40px' }}>Admin Links</h1>    
 
                 <div className='holder' style={{display: 'flex', gap: '20px', padding: '20px'}}>
