@@ -40,9 +40,9 @@ const Home = () => {
                         </a> */}
 
                         {/* eslint-disable-next-line */}
-                        <a rel="noreferrer" target="_blank" href="https://auth.monday.com/auth/login_monday/">
+                        <a rel="noreferrer" target="_blank" href="https://app.asana.com/0/home/1207156526358531">
                             <div className="ButtonDiv2">
-                                <p>Monday</p>
+                                <p>Asana</p>
                             </div>
                         </a>
 
