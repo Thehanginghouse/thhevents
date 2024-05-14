@@ -93,6 +93,13 @@ const Home = () => {
                                 <p>Microsoft</p>
                             </div>
                         </a>
+
+                        {/* eslint-disable-next-line */}
+                        <a rel="noreferrer" target="_blank" href="https://thehanginghouse-org.myfreshworks.com/login?redirect_uri=https%3A%2F%2Fthehanginghouse-org.myfreshworks.com%2Fcrm%2Fsales%2Ffreshid%2Fauthorize_callback%3Fredirect_uri%3D%2Fmy_dashboards%3Ftab%3D353503">
+                            <div className="ButtonDiv2">
+                                <p>Freshworks</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
 
