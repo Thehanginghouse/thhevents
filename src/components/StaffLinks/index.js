@@ -26,7 +26,7 @@ const Home = () => {
                 <div className='green' style={{display: 'flex', gap: '20px', justifyContent: 'center', alignItems: 'center', marginBottom: '50px'}}>
                     <div className='holder' style={{display: 'flex', gap: '20px'}}>
                         {/* eslint-disable-next-line */}
-                        <a rel="noreferrer" target="_blank" href="https://thehanginghouse.webhr.co/hr/home">
+                        <a rel="noreferrer" target="_blank" href="https://hanginghouse.keka.com/">
                             <div className="ButtonDiv2">
                                 <p>WebHR</p>
                             </div>
