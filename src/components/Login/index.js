@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import thhlogo from '../Z_stuff/thhlogo.png';
 import '../Z_stuff/All.css';
@@ -8,13 +8,7 @@ const Login = ({ msalInstance }) => {
   const [error, setError] = useState(null);
   const navigate = useNavigate();
 
-  useEffect(() => {
-    if (msalInstance) {
-      checkAuthenticationStatus();
-    }
-  }, [msalInstance, checkAuthenticationStatus]);
-
-  const checkAuthenticationStatus = async () => {
+  const checkAuthenticationStatus = useCallback(async () => {
     try {
       await msalInstance.handleRedirectPromise();
       const accounts = msalInstance.getAllAccounts();
@@ -34,7 +28,13 @@ const Login = ({ msalInstance }) => {
     } finally {
       setIsLoading(false);
     }
-  };
+  }, [msalInstance, navigate, setError]);
+
+  useEffect(() => {
+    if (msalInstance) {
+      checkAuthenticationStatus();
+    }
+  }, [msalInstance, checkAuthenticationStatus]);
 
   const handleSignIn = async () => {
     try {

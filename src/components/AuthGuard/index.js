@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const AuthGuard = ({ children, msalInstance }) => {
@@ -6,13 +6,7 @@ const AuthGuard = ({ children, msalInstance }) => {
   const [isLoading, setIsLoading] = useState(true);
   const navigate = useNavigate();
 
-  useEffect(() => {
-    if (msalInstance) {
-      checkAuthenticationStatus();
-    }
-  }, [msalInstance, checkAuthenticationStatus]);
-
-  const checkAuthenticationStatus = async () => {
+  const checkAuthenticationStatus = useCallback(async () => {
     try {
       await msalInstance.handleRedirectPromise();
       const accounts = msalInstance.getAllAccounts();
@@ -27,7 +21,13 @@ const AuthGuard = ({ children, msalInstance }) => {
     } finally {
       setIsLoading(false);
     }
-  };
+  }, [msalInstance, navigate]);
+
+  useEffect(() => {
+    if (msalInstance) {
+      checkAuthenticationStatus();
+    }
+  }, [msalInstance, checkAuthenticationStatus]);
 
   if (isLoading) {
     return (

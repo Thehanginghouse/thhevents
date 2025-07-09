@@ -1,6 +1,6 @@
 
 import thhlogo from '../Z_stuff/thhlogo.png'
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import '../Z_stuff/All.css'
 import adminicon from '../Z_stuff/adminicon.png'
 import stafficon from '../Z_stuff/stafficon.png'
@@ -15,13 +15,7 @@ const Home = ({ msalInstance }) => {
     const navigate = useNavigate();
     const [user, setUser] = useState(null);
 
-    useEffect(() => {
-        if (msalInstance) {
-            checkAuthenticationStatus();
-        }
-    }, [msalInstance, checkAuthenticationStatus]);
-
-    const checkAuthenticationStatus = async () => {
+    const checkAuthenticationStatus = useCallback(async () => {
         try {
             await msalInstance.handleRedirectPromise();
             const accounts = msalInstance.getAllAccounts();
@@ -44,7 +38,13 @@ const Home = ({ msalInstance }) => {
             console.error('Error checking authentication:', error);
             navigate('/');
         }
-    };
+    }, [msalInstance, navigate]);
+
+    useEffect(() => {
+        if (msalInstance) {
+            checkAuthenticationStatus();
+        }
+    }, [msalInstance, checkAuthenticationStatus]);
 
     const handleSignOut = async () => {
         try {
