@@ -19,7 +19,7 @@ const Home = ({ msalInstance }) => {
         if (msalInstance) {
             checkAuthenticationStatus();
         }
-    }, [msalInstance]);
+    }, [msalInstance, checkAuthenticationStatus]);
 
     const checkAuthenticationStatus = async () => {
         try {

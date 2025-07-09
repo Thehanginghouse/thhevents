@@ -2,10 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import thhlogo from '../Z_stuff/thhlogo.png';
 import '../Z_stuff/All.css';
-import AppOwnerInfo from '../AppOwnerInfo';
 
 const Login = ({ msalInstance }) => {
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
   const navigate = useNavigate();
@@ -14,14 +12,13 @@ const Login = ({ msalInstance }) => {
     if (msalInstance) {
       checkAuthenticationStatus();
     }
-  }, [msalInstance]);
+  }, [msalInstance, checkAuthenticationStatus]);
 
   const checkAuthenticationStatus = async () => {
     try {
       await msalInstance.handleRedirectPromise();
       const accounts = msalInstance.getAllAccounts();
       if (accounts.length > 0) {
-        setIsAuthenticated(true);
         // Log current user information
         console.log('Current User Account:', accounts[0]);
         console.log('Username:', accounts[0].username);
@@ -50,7 +47,6 @@ const Login = ({ msalInstance }) => {
       });
       
       if (response) {
-        setIsAuthenticated(true);
         // Log successful sign-in information
         console.log('Sign-in successful!');
         console.log('Response:', response);

@@ -78,7 +78,7 @@ const AppOwnerInfo = () => {
       }}>
         <strong>📝 To find the owner:</strong>
         <br />
-        1. Go to <a href="https://portal.azure.com" target="_blank" style={{color: '#00f526'}}>Azure Portal</a>
+        1. Go to <a href="https://portal.azure.com" target="_blank" rel="noreferrer" style={{color: '#00f526'}}>Azure Portal</a>
         <br />
         2. Search for this Client ID in App registrations
         <br />

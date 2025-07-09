@@ -1,5 +1,3 @@
-import { PublicClientApplication } from '@azure/msal-browser';
-
 export const msalConfig = {
   auth: {
     clientId: '28c1e25b-164c-4f81-b9ab-b8c10cf54e2a',

@@ -10,7 +10,7 @@ const AuthGuard = ({ children, msalInstance }) => {
     if (msalInstance) {
       checkAuthenticationStatus();
     }
-  }, [msalInstance]);
+  }, [msalInstance, checkAuthenticationStatus]);
 
   const checkAuthenticationStatus = async () => {
     try {
